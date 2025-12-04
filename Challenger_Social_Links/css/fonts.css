@@ -1,15 +1,21 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter-Regular.ttf') format('truetype'),
-         url('../assets/fonts/Inter-SemiBold.ttf') format('truetype'),
-         url('../assets/fonts/Inter-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
-body{
-    font-family: 'inter';
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
-.profile-name{
-    font-family: 'inter';
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
