@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* SIGNUP SCREEN */
+
+body {
+  background-color: #dddddd;
+  min-height: 100vh;
+}
+
+.signup-modal {
+  position: fixed;
+  width: 500px;
+  height: 205px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.signup-modal h2 {
+  margin-bottom: 20px;
+}
+
+.signup-modal label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.signup-modal input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.signup-modal button {
+  padding: 10px 20px;
+  background-color: #7695ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#enter-btn {
+  display: block;
+  margin-left: auto;
+}
+
+/* MAIN SCREEN */
+
+#main-screen {
+  width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.header {
+  width: 100%;
+  background-color: #7695ec;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  width: 752px;
+  margin: 20px auto;
+  border: 1px solid #999999;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.create-post {
+  width: 100%;
+}
+
+.create-post h2 {
+  margin-bottom: 20px;
+}
+
+.create-post label[for="title"] {
+  margin-bottom: 16px;
+}
+
+.create-post input,
+.create-post textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#create-btn {
+  display: block;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #7695ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* POSTS */
+
+.post {
+  border: 1px solid #999999;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+}
+
+.post-header {
+  background: #7695ec;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.post-header h3 {
+  font-size: 18px;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 5px 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.post-user {
+  font-weight: bold;
+}
+
+.post-content {
+  padding: 10px 20px 20px 20px;
+  line-height: 1.5;
+}
+
+#posts-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-header {
+  background: #7695ec;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-actions button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 400px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#confirm-delete {
+  background: red;
+  color: white;
+}
+
+/* EDIT MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 660px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content textarea {
+  height: 90px;
+  resize: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+#cancel-edit {
+  background: white;
+  border: 1px solid #333;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#save-edit {
+  background: #47b960;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
